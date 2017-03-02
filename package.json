@@ -1,0 +1,11 @@
+{
+  "name": "planets",
+  "version": "1.0.0",
+  "description": "My site",
+  "main": "server.js",
+  "scripts": {
+    "test": "console.log('Сервер запущен');"
+  },
+  "author": "Chacaroon",
+  "license": "ISC"
+}
