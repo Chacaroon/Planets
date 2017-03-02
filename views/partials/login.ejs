@@ -1,0 +1,22 @@
+<div id="dop1">
+    <div style="float: left; width: 47%">
+    <form name="loginForm" id="login" method="post" action="#">
+        <input type="text" name="login" placeholder="Введите ник" pattern="[a-z(A-Z\d_)?]{3,20}" required>
+        <br><br>
+        <input type="password" name="password" placeholder="Введите пароль" pattern="[a-z[A-Z](\d@_-)?]{3,20}" required>
+        <br><br>
+        <button type="sumbit" tabindex="2" formmethod="post" formaction="/login/log">Вход</button>
+    </form>
+    </div>
+    <div style="float: right; width: 47%">
+    <form style="display: inline">
+        <input type="text" name="login" placeholder="Введите ник" pattern="[a-z(A-Z\d_)?]{3,20}" required>
+        <br><br>
+        <input type="email" name="mail" placeholder="Введите e-mail" pattern="[A-Za-z0-9\.]?{3,}@[A-Za-z]+\.[a-z]{2,6}" required>
+        <br><br>
+        <input type="password" name="password" placeholder="Введите пароль" pattern="[a-z(@_-)?]([A-Z]\d)+{3,20}" required>
+        <br><br>
+        <button type="sumbit" tabindex="3" formmethod="post" formaction="/login/reg">Регистрация</button>
+    </form>
+    </div>
+</div>

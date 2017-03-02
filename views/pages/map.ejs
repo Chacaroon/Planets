@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Карта Солнечной системы</title>
+		<%include ../partials/styles.ejs%>
+	</head>
+
+	<body id="back">
+    	<%include ../partials/header.ejs%>
+
+		<div class="main_planet">
+            <%for (var planet in planets) {%>
+                <a href="../planets/<%-planet%>"><img src="img/<%-planet%>.png" class="planets" id="<%-planet%>"></a>
+            <%}%>
+		</div>
+		<script src="js/hover.js" type="text/javascript"></script>
+	</body>
+</html>

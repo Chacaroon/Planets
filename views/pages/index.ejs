@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Planets <%- title%></title>
+    <% include ../partials/styles.ejs %>
+</head>
+
+<body id="back">
+    <%- include ../partials/header.ejs%>
+
+    <img src="../img/logo.jpg" id="logo">
+
+    <div class="main">
+        <div class="main-block">
+            <%- partial(content)%>
+        </div>
+        <%if (log) {%>
+
+            <%- include ../partials/inputs.ejs%>
+        <%} else {%>
+            <%- include ../partials/login.ejs%>
+        <%}%>
+
+        <%if (writeData) {%>
+            <%- partial('../partials/data.ejs')%>
+        <%}%>
+    </div>
+</body>
+</html>
